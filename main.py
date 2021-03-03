@@ -1,7 +1,7 @@
 print(
     "(Please use the same capitilisation as the option when typing answers.) Welcome to The Critical Roll!"
 )
-player = (input("Choose one between (First name only).                                             Skout the Barbarin, Kahlil the Wizard or Quebellios the Rogue Theif"   
+player = (input("Choose one between (First name only).                                            Skout the Barbarin, Kahlil the Wizard or Quebellios the Rogue Theif"   
  ))
 
 if player == "Skout":
@@ -14,21 +14,10 @@ SkoutHP = 15
 SkoutAC = 15
 
 if player == "Kahlil":
-    print(
-        "You are Kahlil Siannodel, academic prodigy in all things Arcane and victim of memory loss, you seek your past through adventures into the great unknown. Though weak in physical strength, you are strong in ways of magic. This morning, however, you seem to have found yourself in a predicament... A wolf is digging through your bellongings! This wolf is not your familliar, it is wild. "
-)
-Int = 3
-Profbonus = 2
-KahlilHP = 10
-KahlilAC = 12
+  import run
 
 if player == "Quebellios":
-    print("You are Quebellios the Rogue Thief, raised on the streets and known nothing but criminality, you seek your fortune through mischevious means. Through any means. For the last few weeks you have been camping outside one of the kingdoms, plotting your next move when, a loud russeling behind you tells your trained ears that you are not alone... Someone... or Something... is going through your pack. A wolf! It seems to be hungry.")
-
-Dex = 4
-Snk = 5
-QueHP = 13
-QueAc = 14
+  import stealth 
 
 WolfAC = 12
 WolfHP = 11
@@ -141,7 +130,7 @@ if player == "Roll damage":
 
 if dmg > WolfHP:
     print(
-        "With a yelp, The Great Wolf falls slain at your feet! You are victorious! The other wolves scatter at the sight and your food is safe... For now. END"
+        "With a yelp, The Great Wolf falls slain at your feet! You are victorious! The other wolves scatter at the sight and your food is safe... For now. But something tells you, there is more to this story. END"
     )
 
 if Bitedmg > SkoutHP:
